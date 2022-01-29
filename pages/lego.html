@@ -20,8 +20,24 @@
  <!--<img src="img/chibi_emelineHD.png" width="50" height="50"/>-->
  <h1 style="color: rgb(255, 255, 255)">serveur lego</h1>
 </div>
-<div class="rectangle" style="text-align: left;">
-  <img src="../img/folder.png" width="70" height="70" style="padding: 10px 10px 10px 10; vertical-align:middle"/>
-  <span style="text-align: right;">Map du serveur</span>
-  <button style="position: relative; left: 75px; top: 30px;">Télécharger</button>
+<div class="rectangle" style="text-align: left; position: relative; left: 20px;">
+  <img src="../img/folder.png" width="50" height="50" style="padding: 5px 10px 10px 125px;"/>
+  <p style="text-align: center; position: relative; bottom: 30px; font-size: 20px;">Map du serveur</p>
+  <button style="position: relative; left: 80px; bottom: 35px;" onclick=onOverlay()>Télécharger</button>
 </div>
+
+<!--overlay pour popup et tt-->
+<div id="overlay">
+  <div class="rectangle" style="position: relative; left: 525px; top: 250px;";>
+  <p style="text-align: center; padding-top: 65px;">Popup de la mort qui tue</p>
+  </div>
+</div>
+<script>
+  function onOverlay() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function offOverlay() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
