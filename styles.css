@@ -17,11 +17,17 @@ p {
    color: white;
 }
 
+span {
+   font-family: TommySoft;
+   font-weight: lighter;
+   color: white;
+}
+
 h1 {
    font-family: BebasNeue;
    font-size: 50px;
    font-weight: lighter;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
 }
 
 button {
@@ -50,3 +56,10 @@ button:hover {
    font-size: 16px;
    cursor: pointer;
 }
+
+.rectangle{
+   width:300px;
+   height:150px;
+   background:rgb(75, 75, 75);
+   border-radius: 5px;
+ }
