@@ -8,15 +8,45 @@ background: url(img/blur_background.jpg) no-repeat center center fixed;
 background-size: cover;
 }
 
-/* font import from the folder "fonts" */
-@font-face {
- font-family: "Bebas Neue";
- src: url("/fonts/BebasNeue-Regular.woff2") format("woff2"),
-        url("/fonts/BebasNeue-Regular.woff") format("woff");
+@font-face { font-family: BebasNeue; src: url('fonts/BebasNeue-Regular.woff2'); } 
+@font-face { font-family: TommySoft; src: url('fonts/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.woff2');  }
+
+p {
+   font-family: TommySoft;
+   font-weight: lighter;
+   color: white;
 }
 
-@font-face {
-    font-family: "Tommy Soft";
-    src: url("/fonts/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.woff2") format("woff2"),
-           url("/fonts/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.woff") format("woff");
-   }
+h1 {
+   font-family: BebasNeue;
+   font-size: 50px;
+   font-weight: lighter;
+   letter-spacing: 2px;
+}
+
+button {
+   background-color: #e9e9e9;
+   border: none;
+   border-radius: 5px;
+   color: rgb(26, 26, 26);
+   padding: 8px 25px;
+   text-align: center;
+   text-decoration: none;
+   font-family: TommySoft;
+   font-size: 16px;
+   cursor: pointer;
+   transition-duration: 0.4s;
+}
+
+button:hover {
+   background-color: #555555;
+   border: none;
+   border-radius: 5px;
+   color: rgb(216, 216, 216);
+   padding: 8px 25px;
+   text-align: center;
+   text-decoration: none;
+   font-family: TommySoft;
+   font-size: 16px;
+   cursor: pointer;
+}
