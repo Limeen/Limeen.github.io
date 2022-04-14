@@ -54,8 +54,8 @@ span {
 
 button {
    background-color: #e0e0e0;
-   border: none;
-   border-radius: 5px;
+   border: 1px solid transparent;
+   border-radius: 6px;
    color: rgb(39, 39, 39);
    padding: 8px 25px;
    text-align: center;
@@ -69,7 +69,7 @@ button {
 button:hover {
    background-color: #555555;
    border: white solid 1px;
-   border-radius: 5px;
+   border-radius: 6px;
    color: rgb(216, 216, 216);
    padding: 8px 25px;
    text-align: center;
@@ -105,8 +105,8 @@ button:hover {
     background-color: rgb(75, 75, 75);
     border-radius: 5px;
     padding: 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 260px;
+    margin-right: 260px;
     transition-duration: 0.4s;
     opacity: 90%;
  }
@@ -115,8 +115,8 @@ button:hover {
    background-color: rgb(75, 75, 75);
    border-radius: 5px;
    padding: 6px;
-   margin-left: 200px;
-   margin-right: 200px;
+   margin-left: 230px;
+   margin-right: 230px;
    opacity: 100%;
 }
 
