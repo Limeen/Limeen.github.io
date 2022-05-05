@@ -1,0 +1,114 @@
+/* Style de la page web "CynthiaDwork.html" */
+
+/* Police d'écriture personalisé*/
+   @font-face { font-family: BebasNeue; src: url('../polices/BebasNeue-Regular.woff2'); } 
+   @font-face { font-family: TommySoft; src: url('../polices/TommySoft-Medium.woff2');  }
+
+/* Fond de la page */
+html { 
+     background: linear-gradient(rgb(56, 71, 199), rgb(42, 40, 156), rgb(43, 16, 105), rgb(36, 20, 74));;
+    }
+
+/* Style de la page */
+h1 {
+    color: white;
+    font-family: BebasNeue;
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    border: white solid 3px;
+    border-radius: 10px;
+    margin-right: 300px;
+    margin-left: 300px;
+    height: 75px;
+}
+
+h2 {
+    color: white;
+    font-family: BebasNeue;
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+h3 {
+    color: rgb(163, 163, 163);
+    font-family: TommySoft;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+p {
+    color: rgb(228, 228, 228);
+    font-family: TommySoft;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+ul {
+    color: rgb(228, 228, 228);
+    font-family: TommySoft;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+ol {
+    color: rgb(228, 228, 228);
+    font-family: TommySoft;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+img {
+   border-radius: 15px;
+   transition-duration: 0.4s;
+}
+
+/* Hover, lorsque la souris est sur l'élément */
+img:hover {
+    height: 230px;
+    width: 240px;
+    cursor: pointer;
+}
+
+a {
+    color: rgb(31, 125, 207);
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    color: rgb(41, 146, 238);
+    font-size: 19px;
+}
+
+.prix {
+    color: rgb(255, 213, 24);
+    transition-duration: 0.4s;
+}
+
+.prix:hover {
+    color: rgb(251, 255, 44);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boîte {
+    border: white solid 2px;
+    border-radius: 10px;
+    margin: 30px;
+    transition-duration: 0.4s;
+}
+
+.boîte:hover {
+    margin: 15px;
+}
+
