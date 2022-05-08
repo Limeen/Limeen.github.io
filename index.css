@@ -1,11 +1,16 @@
 
 /* background image fixed */
-html { 
+/* html { 
 background: url(img/blur_background.jpg) no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+}
+*/
+
+html {
+   background-color: #181818;
 }
 
 /* Importation police custom */
@@ -78,6 +83,10 @@ button:hover {
    cursor: pointer;
 }
 
+.buttonmenu {
+   font-family: TommySoft;
+}
+
 input {
    font-family: TommySoft;
    border: none;
@@ -125,23 +134,11 @@ input:hover {
 }
 
  .menuhaut {
-    background-color: rgb(75, 75, 75);
-    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    position: relative;
+    bottom: 8px;
     padding: 5px;
-    margin-left: 260px;
-    margin-right: 260px;
-    transition-duration: 0.4s;
-    opacity: 90%;
  }
-
- .menuhaut:hover {
-   background-color: rgb(75, 75, 75);
-   border-radius: 5px;
-   padding: 5px;
-   margin-left: 230px;
-   margin-right: 230px;
-   opacity: 100%;
-}
 
 /*éléments internet */
  #overlay {
