@@ -17,7 +17,8 @@ h1 {
    color: white;
    font-family: BebasNeue;
    font-weight: lighter;
-   font-size: 70px;
+   font-size: 3vw;
+   padding-bottom: 0.8vw;
    text-align: center;
 }
 
@@ -25,25 +26,38 @@ h2 {
    color: white;
    font-family: BebasNeue;
    font-weight: lighter;
-   font-size: 35px;
+   font-size: 2vw;
    text-align: left;
-   padding-left: 30px;
-   padding-bottom: -0px;
+   padding-left: 2vw;
+   padding-bottom: -0vw;
 }
 
 h3 {
    color: rgb(163, 163, 163);
    font-family: TommySoft;
    font-weight: lighter;
-   font-size: 15px;
+   font-size: 15vw;
    text-align: right;
-   padding-right: 10px;
+   padding-right: 10vw;
 }
 
 p {
    font-family: TommySoft;
    font-weight: lighter;
    color: rgb(233, 233, 233);
+   font-size: 1vw;
+}
+
+a {
+   cursor: pointer;
+   color: rgb(127, 204, 255);
+   transition-duration: 0.4s;
+}
+
+a:hover {
+   cursor: pointer;
+   color: aquamarine;
+   transition-duration: 0.4s;
 }
 
 span {
@@ -54,27 +68,24 @@ span {
 
 button {
    background-color: #e0e0e0;
-   border: 1px solid transparent;
-   border-radius: 6px;
+   border: 0.09vw solid transparent;
+   border-radius: 0.3vw;
    color: rgb(39, 39, 39);
-   padding: 8px 25px;
+   padding: 0.3vw 1.1vw;
    text-align: center;
    text-decoration: none;
    font-family: TommySoft;
-   font-size: 16px;
+   font-size: 0.9vw;
    cursor: pointer;
    transition-duration: 0.4s;
 }
 
 button:hover {
    background-color: #555555;
-   border-radius: 6px;
    color: rgb(216, 216, 216);
-   padding: 8px 25px;
    text-align: center;
    text-decoration: none;
    font-family: TommySoft;
-   font-size: 16px;
    cursor: pointer;
 }
 
@@ -107,12 +118,12 @@ input:hover {
 .boîte {
    border: white solid 1px;
    border-radius: 10px;
-   margin: 30px;
+   margin: 1vw;
    transition-duration: 0.4s;
 }
 
 .rectangle{
-   width:300px;
+   width: 300px;
    height:150px;
    background:rgb(75, 75, 75);
    border-radius: 5px;
@@ -126,20 +137,18 @@ input:hover {
 
  .menuhaut {
     background-color: rgb(75, 75, 75);
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 260px;
-    margin-right: 260px;
+    border-radius: 0.3vw;
+    padding: 0.3vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     transition-duration: 0.4s;
     opacity: 90%;
  }
 
  .menuhaut:hover {
    background-color: rgb(75, 75, 75);
-   border-radius: 5px;
-   padding: 5px;
-   margin-left: 230px;
-   margin-right: 230px;
+   margin-left: 10vw;
+   margin-right: 10vw;
    opacity: 100%;
 }
 
