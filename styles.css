@@ -1,0 +1,174 @@
+/* background image fixed */
+html { 
+    background: url(img/duskforest.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgb(48, 48, 48);
+    transition-duration: 0.4s;
+    }
+
+/* Importation police custom */
+@font-face { font-family: TommySoftMedium; src: url('font/TommySoft/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf'); } 
+@font-face { font-family: TommySoftThin; src: url('font/TommySoft/MADE\ Tommy\ Soft\ Thin\ PERSONAL\ USE.otf'); } 
+@font-face { font-family: TommySoftRegular; src: url('font/TommySoft/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf'); } 
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeInTitle {
+    0% { opacity: 0; font-size: 0vw; }
+    100% { opacity: 1; font-size: 7vw;}
+  }
+
+  @keyframes fadeInSmallTitle {
+    0% { opacity: 0; font-size: 0vw; }
+    100% { opacity: 1; font-size: 4vw;}
+  }
+
+/* Style de la page */
+h1 {
+    color: white;
+    font-family: TommysoftMedium;
+    font-weight: lighter;
+    font-size: 7vw;
+    transition-duration: 0.4s;
+    animation: fadeInTitle 2s;
+    margin: auto;
+}
+
+h2 {
+    color: rgb(216, 216, 216);
+    font-family: TommysoftRegular;
+    font-weight: lighter;
+    font-size: 2vw;
+    transition-duration: 0.4s;
+    animation: fadeIn 5s;
+    margin: auto;
+    margin-left: 0.3vw;
+}
+
+a {
+    color: rgb(85, 125, 255);
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    color: rgb(85, 255, 170);
+    transition-duration: 0.4s;
+}
+
+button {
+    transition-duration: 0.4s;
+    background-color: rgba(218, 218, 218, 0.205);
+    border: solid 3px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 0.6vw;
+    font-family: TommySoftRegular;
+    font-size: 1.5vw;
+    padding: 0.3vw;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transition-duration: 0.4s;
+    background-color: rgba(255, 255, 255, 0.336);
+    border: solid 3px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 0.6vw;
+    font-family: TommySoftRegular;
+    font-size: 1.5vw;
+    padding: 0.3vw;
+    color: white;
+    cursor: pointer;
+}
+
+.smallpagetitletext {
+    font-size: 4vw;
+    animation: fadeInSmallTitle 2s;
+}
+
+.choicetitletext {
+    font-family: TommySoftMedium;
+    color: white;
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-top: 0.5vw;
+}
+
+.choicedescriptiontext {
+    font-family: TommySoftRegular;
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.choiceimg {
+    float: right;
+    margin-top: 1.3vw;
+    margin-right: 1vw;
+    width: 2.7vw;
+    height: 2.7vw;
+}
+
+.choiceimgbig {
+    float: right;
+    margin-top: 1.3vw;
+    margin-right: 1vw;
+    width: 7vw;
+    height: 7vw;
+}
+
+.navbox {
+    border: solid 3px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 1vw;
+    margin-top: 18vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    margin-bottom: 2vw;
+    transition-duration: 0.4s;
+    background-color: rgba(218, 218, 218, 0.205);
+}
+
+.navboxsmall {
+    border: solid 3px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 1vw;
+    margin-top: 13vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    margin-bottom: 2vw;
+    transition-duration: 0.4s;
+    background-color: rgba(218, 218, 218, 0.205);
+}
+
+.navchoice {
+    border: solid 3px;
+    border-color: rgba(255, 255, 255, 0);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    transition-duration: 0.4s;
+    background-color: rgba(218, 218, 218, 0.205);
+}
+
+.navchoice:hover {
+    border: solid 3px;
+    border-color: rgba(255, 255, 255, 0);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    transition-duration: 0.4s;
+    background-color: rgba(218, 218, 218, 0.342);
+    cursor: pointer;
+}

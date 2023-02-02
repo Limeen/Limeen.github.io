@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <link href="index.css" rel="stylesheet" type="text/css">
-  <title>Limeen</title>
-  <link rel="icon" href="img/chibi_emelineHD.png">
-  <div class="menuhaut" style="text-align: center;">
-   <button onclick="location.href='index.html'" type="button">Accueil</button>
-   <button onclick="location.href='pages/lego.html'" type="button">Serveur lego</button>
-   <button onclick="location.href='pages/projet.html'" type="button">Projets</button>
-   <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" type="button">Bouton</button>
-   <button onclick="location.href='pages/about.html'" type="button">À propos</button>
-  </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Limeen - Home</title>
 </head>
 <body>
- <!--<img src="img/chibi_emelineHD.png" width="50" height="50"/>-->
- <div class="boîte">
-  <img src="img/face_with_raised_eyebrow.png" width="100" height="100" style="float: right; margin-right: 30px; margin-bottom: 30px; margin-top: 30px;">
-  <h2>C'est quoi ce site??</h2>
-  <p style="margin-left: 40px; margin-bottom: 20px;">Cet endroit me permet d'apprendre à utiliser le html et le css, c'est pour ça que le site est pas très beau d'ailleurs !!<br />
-    j'héberge également ici les ressources que je veux partager avec mes amis et mes trucs personnels
-</p>
-</div>
- <div class="boîte">
- <h2>Bloc de test</h2>
- <p style="color: white; margin-left: 40px;">Cc!! j'écris juste des petits trucs ici quand j'ai rien à faire!! :sunglasses:</p>
- <p style="color: white; margin-left: 40px;">TEXTE EN MAJUSCULE</p>
- <p style="color: rgb(236, 248, 69); margin-left: 40px;">Texte jaune??</p>
- <button style="margin-left: 40px;" onclick="location.href='https://www.youtube.com/c/Limeen'" type="button">Bouton 1</button>
- <button onclick="location.href='https://steamcommunity.com/id/Limeen/'" type="button">Bouton 2</button>
- <button onclick="location.href='https://www.youtube.com/c/Limeen'" type="button">Oui</button>
- <button onclick="location.href='https://steamcommunity.com/id/Limeen/'" type="button">Non</button>
- <p style="margin-left: 40px;">Je suis un texte <b>gras</b> et non! enfaite je suis en <i>italique haha!</i> j'ai encore menti... je suis <u>souligné..</u></p>
- <hr style="height: 1px; margin-left: 40px; margin-right: 40px;" color="#f7f7f7"/>
- <p style="margin-left: 40px;">Texte input</p>
- <input style="margin-left: 40px;">
-</div>
+    <div style="position: absolute; left: 8vw; top: 3vw;">
+        <h1>Bienvenue.</h1>
+        <h2>Ce site me permet d'apprendre le HTML et le CSS.</h2>
+    </div>
+    <div class="navbox">
+        <div class="navchoice" onclick="location.href='page/projets.html'">
+            <img src="img/fleche-droite-white.png"; class="choiceimg">
+            <h2 class="choicetitletext">Liste de mes projets</h2>
+            <h2 class="choicedescriptiontext">Afficher la liste des projets que je partage publiquement</h2>
+        </div>
+        <div class="navchoice" onclick="location.href='page/ressources.html'">
+            <img src="img/fleche-droite-white.png"; class="choiceimg">
+            <h2 class="choicetitletext">Ressources</h2>
+            <h2 class="choicedescriptiontext">Téléchargez des trucs sympa ici (wink, wink!)</h2>
+        </div>
+        <div class="navchoice" onclick="location.href='page/social.html'">
+            <img src="img/fleche-droite-white.png"; class="choiceimg">
+            <h2 class="choicetitletext">Mes réseaux</h2>
+            <h2 class="choicedescriptiontext">Accéder à l'ensemble de mes réseaux sociaux et autres méthodes de contact ici</h2>
+        </div>
+
+    </div>
 </body>
 </html>
