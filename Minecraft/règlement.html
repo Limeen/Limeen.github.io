@@ -98,7 +98,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="col-12">
-                <h3 class="mbr-section-title align-center mb-3 mbr-fonts-style display-2">Règlement du serveur</h3>
+                <h3 class="mbr-section-title align-center mb-3 mbr-fonts-style display-2">Règlement du serveur<br></h3>
                 <div class="social-list align-center">
                    
                     
@@ -129,8 +129,8 @@
                 <div class="mbr-text mbr-fonts-style display-7">
                     <ol>
                         <li><strong>Nom d'utilisateur</strong><br>Votre pseudo en jeu ne doit pas être offensant ou irrespectueux.</li>
-                        <li><strong>Chat en jeu<br></strong>Traitez tout le monde avec respect. Pas de harcèlement, de sexisme, de racisme ou de discours de haine. Le spam n'est pas autorisé.</li><li><strong>Skins</strong><br>Les skins en jeu ne sont pas modérés.</li><li><strong>Double compte</strong><br>Les doubles comptes sont autorisés du moment qu'aucun de vos comptes n'est été banni.</li><li><strong>Anti-AFK</strong><br>Bypass le système Anti-AFK n'est pas autorisé, <strong>surtout</strong> quand les slots sont pleins.<br><em>L'anti-afk permet de soulager le serveur et de laisser de la place pour les autres joueurs.</em></li>
-                        <li><strong>Triche<br></strong>L'utilisation de clients, de logiciels tierces, de mods de triche n'est pas autorisé.</li><li><strong>Usurpation d'identité</strong><br>Ne tentez pas de voler l'identité de quelqu'un ou de se connecter à son compte.</li></ol><ol>
+                        <li><strong>Chat en jeu<br></strong>Traitez tout le monde avec respect. Pas de harcèlement, de sexisme, de racisme, de toxicité, de spam ou de discours de haine.</li><li><strong>Skins</strong><br>Les skins en jeu ne sont pas modérés.</li><li><strong>Double compte</strong><br>Les doubles comptes sont autorisés du moment qu'aucun de vos comptes n'est été banni.</li><li><strong>Anti-AFK</strong><br>Contourner le système Anti-AFK n'est pas autorisé, <strong>surtout</strong> quand les slots sont pleins.<br><em>L'anti-afk permet de soulager le serveur et de laisser de la place pour les autres joueurs.</em></li>
+                        <li><strong>Triche<br></strong>L'utilisation de clients, de logiciels tierces, de mods de triche n'est pas autorisé.<br>L'Xray est évidement interdit.</li><li><strong>Usurpation d'identité</strong><br>Ne tentez pas de voler l'identité de quelqu'un ou de se connecter à son compte.</li></ol><ol>
                     </ol>
                 </div>
             </div>
@@ -148,8 +148,8 @@
                     II. Espace de jeu</h4>
                 <div class="mbr-text mbr-fonts-style display-7">
                     <ol>
-                        <li><strong>Spawn kill</strong><br>Tuez quelqu'un lors de son apparition dans le monde n'est pas autorisé.</li>
-                        <li><strong>Spawn blocking<br></strong>Bloquer ou piéger les points d'apparitions est interdit.</li><li><strong>Claims</strong><br>L'abus des claims n'est pas autorisé.</li><li><strong>Redstone</strong><br>Les machines à lags ne sont pas autorisé sur le serveur, votre construction ne doit pas nuire aux claims des autres joueurs ou au bon fonctionnement du serveur.</li></ol><ol>
+                        <li><strong>Grief &amp; Pillage</strong><br>Le <a href="javascript:OpenModal('def-grief')" class="text-primary">grief</a> et les pillages sont interdit. Protégez vos coffres avec un <a href="javascript:OpenModal('def-claim')" class="text-primary">claim</a>.</li><li><strong>Spawn kill</strong><br>Tuez quelqu'un lors de son apparition dans le monde, ou d'une téléportation n'est pas autorisé.</li>
+                        <li><strong>Spawn blocking<br></strong>Bloquer ou piéger les points d'apparitions est interdit.</li><li><strong>Claims</strong><br>L'abus des <a href="javascript:OpenModal('def-claim')" class="text-primary">claims</a> n'est pas autorisé. En particulier le <a href="javascript:OpenModal('def-claim-blocking')" class="text-primary">claim blocking</a>.</li><li><strong>Redstone</strong><br>Les machines à lags ne sont pas autorisé sur le serveur, votre construction ne doit pas nuire aux claims des autres joueurs ou au bon fonctionnement du serveur.</li></ol><ol>
                     </ol>
                 </div>
             </div>
@@ -174,6 +174,225 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-30" data-rv-view="160">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="def-claim" tabindex="-1" role="dialog" aria-labelledby="def-claimLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="def-claimLabel">Définition "Claim"</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="def-claim_body">Le claim permet la protection d'une zone définie. <br>Seule la personne qui a claim et les membres autorisés peuvent accéder à votre claim et y faire des modifications.</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Ok</a></div><div class="mbr-section-btn"><a href="https://limeen.github.io/Minecraft/guide.html" class="no-anim btn btn-primary display-4">Comment utiliser les claims en jeu?</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#def-claim").on("hidden.bs.modal", function () { 
+      var html = $( "#def-claim_body" ).html(); 
+      $( "#def-claim_body" ).empty(); 
+      $( "#def-claim_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#def-claim") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-2y" data-rv-view="32">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="def-claim-blocking" tabindex="-1" role="dialog" aria-labelledby="def-claim-blockingLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="def-claim-blockingLabel">Définition "Claim blocking"</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="def-claim-blocking_body">Utiliser son claim dans l'objectif de nuire à un autre joueur.</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Ok</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#def-claim-blocking").on("hidden.bs.modal", function () { 
+      var html = $( "#def-claim-blocking_body" ).html(); 
+      $( "#def-claim-blocking_body" ).empty(); 
+      $( "#def-claim-blocking_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#def-claim-blocking") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-2z" data-rv-view="33">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="def-grief" tabindex="-1" role="dialog" aria-labelledby="def-griefLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="def-griefLabel">Définition "Grief"</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="def-grief_body">Il est interdit de nuire à un claim en faisant des constructions dénaturant le tour du claim ou la carte en général. (Ex: Mur de pierre, lave, tranchée, tnt, destructions, etc..)</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Ok</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#def-grief").on("hidden.bs.modal", function () { 
+      var html = $( "#def-grief_body" ).html(); 
+      $( "#def-grief_body" ).empty(); 
+      $( "#def-grief_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#def-grief") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
 </section>
 
 <section data-bs-version="5.1" class="footer2 cid-tAyDUz3pUs" once="footers" id="footer2-28">
