@@ -76,7 +76,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">Serveur Survie Minecraft.</h1>
-                <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><span data-playercounter-ip="legominecraft.ddns.net">4</span> joueurs connectés</h2>
+                <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><span data-playercounter-ip="legominecraft.ddns.net">...</span> joueurs connectés</h2>
                 
                 <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-4" href="vote.html"><span class="mbrib-like mbr-iconfont mbr-iconfont-btn" style="font-size: 19px;"></span>Voter pour le serveur</a> <a class="btn btn-primary display-4" href="index.html#clients2-r"><span class="mbrib-right mbr-iconfont mbr-iconfont-btn" style="font-size: 19px;"></span>Rejoindre le serveur</a></div>
                 
@@ -133,7 +133,7 @@
                         <h5 class="card-title mbr-fonts-style mb-3 display-5">EaglercraftX</h5>
                         <p class="mbr-text mbr-fonts-style mb-4 display-4">
                             Rejoignez le serveur directement dans votre navigateur</p>
-                        <div class="mbr-section-btn mt-3"><a class="btn btn-primary-outline display-4" href="http://legominecraft.ddns.net:8081/" target="_blank">Rejoindre</a></div>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-primary-outline display-4" href="http://legoo.alwaysdata.net/" target="_blank">Rejoindre</a></div>
                     </div>
                 </div>
             </div>
@@ -266,79 +266,6 @@
             
         </div>
     </div>
-</section>
-
-<section class="mbr-section" id="witsec-modal-window-block-2e" data-rv-view="14">
-
-	<style>
-	/* Let's not animate the contents of modal windows */
-	.no-anim {
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
-	</style>
-
-	
-	
-	<div><div class="modal fade" id="no-web" tabindex="-1" role="dialog" aria-labelledby="no-webLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="no-webLabel">Erreur</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="no-web_body">La version web n'est plus disponible depuis le 11 Avril 2023.</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Ok</a></div></div>    </div>  </div></div><script> 
-document.addEventListener("DOMContentLoaded", function() { 
-  if(typeof jQuery === "function") {
-    $("#no-web").on("hidden.bs.modal", function () { 
-      var html = $( "#no-web_body" ).html(); 
-      $( "#no-web_body" ).empty(); 
-      $( "#no-web_body" ).append(html); 
-    }) 
-  } else { 
-      var mdw = document.getElementById("#no-web") 
-      mdw.addEventListener("hidden.bs.modal", function(event) { 
-        mdw.innerHTML = mdw.innerHTML; 
-      }); 
-  } 
-}); 
-</script></div>
-
-	<script>
-	if (typeof OpenModal === 'undefined') {
-		OpenModal = function(modalName) {
-			if(typeof jQuery === "function") {
-				if ($('#' + modalName).length)
-					$('#' + modalName).modal('show');
-				else
-					alert("Sorry, but there is no modal for " + modalName);
-			} else {
-				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
-				mdw.show();
-			}
-		}
-	}
-
-	function modalSetCookie(cname, cvalue, exdays) {
-		var d = new Date();
-		d.setTime(d.getTime() + (exdays*24*60*60*1000));
-		var expires = "expires="+ d.toUTCString();
-		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-	}
-
-	function modalGetCookie(cname) {
-		var name = cname + "=";
-		var decodedCookie = decodeURIComponent(document.cookie);
-		var ca = decodedCookie.split(';');
-		for(var i = 0; i <ca.length; i++) {
-			var c = ca[i];
-			while (c.charAt(0) == ' ') {
-				c = c.substring(1);
-			}
-			if (c.indexOf(name) == 0) {
-				return c.substring(name.length, c.length);
-			}
-		}
-		return "";
-	}
-	</script>
-
 </section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
