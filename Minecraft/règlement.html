@@ -129,7 +129,7 @@
                 <div class="mbr-text mbr-fonts-style display-7">
                     <ol>
                         <li><strong>Nom d'utilisateur</strong><br>Votre pseudo en jeu ne doit pas être offensant ou irrespectueux, de même pour le nom et la description de votre alliance.</li>
-                        <li><strong>Chat en jeu<br></strong>Traitez tout le monde avec respect. Pas de harcèlement, de sexisme, de racisme, de toxicité, de spam ou de discours de haine.</li><li><strong>Skins</strong><br>Les skins en jeu ne sont pas modérés.</li><li><strong>Double compte</strong><br>Les doubles comptes sont tolérés, mais il est interdit d'utiliser un double compte dans l'unique but de s'enrichir.<br></li><li><strong>Anti-AFK</strong><br>Contourner le système Anti-AFK de n'importe quelle manière n'est pas autorisé.</li>
+                        <li><strong>Chat en jeu<br></strong>Traitez tout le monde avec respect. Pas de harcèlement, de sexisme, de racisme, de toxicité, de spam ou de discours de haine.</li><li><strong>Skins</strong><br>Les skins en jeu ne sont pas modérés.</li><li><strong>Double compte</strong><br>Les doubles comptes sont tolérés, mais il est interdit d'utiliser un double compte dans l'unique but de s'enrichir ou de profiter de plus de <a href="javascript:OpenModal('def-claimsblocks')" class="text-primary">blocs de claims</a>.<br></li><li><strong>Anti-AFK</strong><br>Contourner le système Anti-AFK de n'importe quelle manière n'est pas autorisé.</li>
                         <li><strong>Triche<br></strong>L'utilisation de clients, de logiciels tierces, de mods de triche n'est pas autorisé.<br>L'Xray est évidement interdit.</li><li><strong>Usurpation d'identité</strong><br>Ne tentez pas de voler l'identité de quelqu'un ou de se connecter à son compte.</li></ol><ol>
                     </ol>
                 </div>
@@ -176,7 +176,80 @@
     </div>
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-30" data-rv-view="105">
+<section class="mbr-section" id="witsec-modal-window-block-49" data-rv-view="97">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="def-claimsblocks" tabindex="-1" role="dialog" aria-labelledby="def-claimsblocksLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="def-claimsblocksLabel">Définition</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="def-claimsblocks_body">Les blocs de claim permettent de revendiquer un certain nombre de blocs sur la carte dans son claim.</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Ok</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#def-claimsblocks").on("hidden.bs.modal", function () { 
+      var html = $( "#def-claimsblocks_body" ).html(); 
+      $( "#def-claimsblocks_body" ).empty(); 
+      $( "#def-claimsblocks_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#def-claimsblocks") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-30" data-rv-view="98">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -249,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-2y" data-rv-view="106">
+<section class="mbr-section" id="witsec-modal-window-block-2y" data-rv-view="99">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -322,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-2z" data-rv-view="107">
+<section class="mbr-section" id="witsec-modal-window-block-2z" data-rv-view="100">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
